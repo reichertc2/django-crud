@@ -1,0 +1,10 @@
+{% extends 'base_.html' %}
+
+{% block content %}
+<h1>This Snack Delete View</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    <p>Say goodbye forever to "{{snack.title}}"</p>
+    <input type="submit" value="OK">
+</form>
+{% endblock content %}
